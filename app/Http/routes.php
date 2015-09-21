@@ -2,7 +2,7 @@
 
 /*
 |==========================================================================
-| Application Routes
+|                         Application Routes
 |==========================================================================
 |
 | Here is where you can register all of the routes for an application.
@@ -12,12 +12,16 @@
 */
 
 
+/*==========================================================================*/
+/*                            All Posts                                     */                              
+/*==========================================================================*/
+    Route::get('/', function () {
+       $post = \App\Models\Post::all();
+       return $post;
+//     return view('allposts');
+    });
+/*==========================================================================*/
 
-Route::get('/', function () {
-//    return view('allposts');
-    $post = \App\Models\Post::all();
-    return $post;
-});
 
 Route::get('post', function () {
     return view('post');
