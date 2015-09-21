@@ -11,7 +11,7 @@ class Post extends Model
     }
     
     public function comments(){
-        return $this->belongsTo('App\Models\Comment');
+        return $this->hasMany('App\Models\Comment');
     }
     
     public function lblposts(){

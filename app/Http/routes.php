@@ -15,17 +15,21 @@
 /*==========================================================================*/
 /*                            All Posts                                     */                              
 /*==========================================================================*/
-    Route::get('/', function () {
-       $post = \App\Models\Post::all();
+    Route::get('post/{id}', function ($id) {
+       $post = \App\Models\Post::find($id);
        return $post;
 //     return view('allposts');
     });
 /*==========================================================================*/
 
-
-Route::get('post', function () {
-    return view('post');
-});
+    Route::get('comment',function(){
+        $comment = \App\Models\Comment::find(1);
+        return $comment;
+    });
+    
+//Route::get('post', function () {
+//    return view('post');
+//});
 
 Route::get('label', function () {
     return view('label');
