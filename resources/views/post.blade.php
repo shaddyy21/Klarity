@@ -1,4 +1,4 @@
-@extends('template.template')         
+@extends('template.template')
 @section('content') 
                 @foreach(\App\Models\Post as $post)
                   <div class="content section single-post-page" id="content">   
