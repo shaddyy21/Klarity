@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/forms-nr-min.css">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
-     <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
    </head>
    <body>
       <div class="container">
