@@ -17,7 +17,7 @@
     Route::get('/', function () {
        $post = \App\Models\Post::all();
 //       return $post;
-     return view('allposts',['post'=>$post]);
+     return view('allposts',compact('post'));
     });
 /*==========================================================================*/
 
@@ -57,7 +57,7 @@
 /*==========================================================================*/
     Route::get('labels', function(){
         $label = \App\Models\Label::all();
-        return $label;
+        return view('label',compact('label'));
     });
 /*==========================================================================*/
 

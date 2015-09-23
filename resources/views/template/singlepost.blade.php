@@ -21,7 +21,7 @@
                               <div class="post-body">
                                  <div class="featimg left" style="position:relative;">
                                     <div class="item-label">
-                                       <span><a href="label/Minimal" rel="tag">Minimal</a></span>
+                                       <span><a href="label/Minimal" rel="tag">{{$post->labels->label}}</a></span>
                                     </div>
                                     <div class="item-thumb entry-image" style="position:relative;">
                                        <a href="">
@@ -33,7 +33,7 @@
                                  </div>
                                  <div class="clr"></div>
                                  <div class="post-meta">
-                                    <div class="small">Posted by <a href="" rel="author" title="Posts bySora Templates">{{$post->user->firstname}} {{$post->user->lastname}}</a> in 
+                                    <div class="small">Posted by <a href="" rel="author" title="Posts by{{$post->user->firstname}} {{$post->user->lastname}}">{{$post->user->firstname}} {{$post->user->lastname}}</a> in 
                                        <span class="post-categories">
                                        <a href="Minimal" rel="tag">Minimal</a>,
                                        <a href="Photography" rel="tag">Photography</a>,
