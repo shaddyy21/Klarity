@@ -28,7 +28,7 @@
     Route::get('posts/{id}', function ($id) {
        $post = \App\Models\Post::find($id);
 //       return $post;
-     return view('post');
+     return view('post',compact('post'));
     });
 /*==========================================================================*/
 

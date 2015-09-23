@@ -1,10 +1,9 @@
 @extends('template.template')
-@section('content') 
-                @foreach(\App\Models\Post as $post)
+@section('content')
                   <div class="content section single-post-page" id="content">   
                      <div class="post-outer">
                         <div class="post hentry uncustomized-post-template">
-                           <h1 class="the-main-title single-post-title"></h1>
+                           <h1 class="the-main-title single-post-title">{{$post->title}}</h1>
                            <div class="post-meta">
                               <div class="small">Posted by <a href="" rel="author" title="Posts bySora Templates">Sora Templates</a> in 
                                  <span class="post-categories">
@@ -18,12 +17,11 @@
                            <div class="post-body">        
                               <a href="images/main01.jpg" class="main-image"><img src="{{asset('images/main01.jpg')}}"></a>
                               <p>
-                                 Id mea dolorum lobortis, vix eu quas officiis. Cu quod ludus disputando vix. Vero nihil ullamcorper in nec. Sed everti voluptatum ad, tantas audiam tractatos at duo. Mel inani option sadipscing ea, senserit ocurreret disputationi has ne.<br><br>Ad vel cetero iuvaret incorrupte, no alia fierent eam. Te altera deserunt oportere cum, facer movet quaestio eum ad. Commodo omittam copiosae id nec, odio iusto expetendis vim ea. Eu per nisl dicunt lobortis, eam ut suas noluisse. Agam ancillae ne has, ea quo dolorum fierent. Eu dolor ignota has, cu sed sint iuvaret qualisque. Ex qui tantas albucius, tation antiopam cum at.  
+                                {{$post->content}}
                               </p>
                                  
                            </div>
-                @endforeach
-                           <div id="related-posts">
+                            <div id="related-posts">
                               <h5>Related Posts</h5>
                               <ul>
                                  <li>
