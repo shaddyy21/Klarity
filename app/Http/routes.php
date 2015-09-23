@@ -17,7 +17,7 @@
     Route::get('/', function () {
        $post = \App\Models\Post::all();
 //       return $post;
-     return view('allposts');
+     return view('allposts',['post'=>$post]);
     });
 /*==========================================================================*/
 
@@ -26,9 +26,8 @@
 /*                            Shows Posts by ID                             */
 /*==========================================================================*/
     Route::get('posts/{id}', function ($id) {
-       $post = \App\Models\Post::find($id);
-//       return $post;
-     return view('post',compact('post'));
+        $post = \App\Models\Post::find($id);
+        return view('post',compact('post'));
     });
 /*==========================================================================*/
 

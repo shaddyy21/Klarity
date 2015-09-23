@@ -5,7 +5,7 @@
                         <div class="post hentry uncustomized-post-template">
                            <h1 class="the-main-title single-post-title">{{$post->title}}</h1>
                            <div class="post-meta">
-                              <div class="small">Posted by <a href="" rel="author" title="Posts bySora Templates">Sora Templates</a> in 
+                              <div class="small">Posted by <a href="" rel="author" title="Posts bySora Templates">{{$post->user->firstname}} {{$post->user->lastname}}</a> in 
                                  <span class="post-categories">
                                  <a href="" rel="tag">Minimal</a>,
                                  <a href="" rel="tag">Photography</a>,
@@ -15,7 +15,7 @@
                               </div>
                            </div>
                            <div class="post-body">        
-                              <a href="images/main01.jpg" class="main-image"><img src="{{asset('images/main01.jpg')}}"></a>
+                              <a href="{{url('images/main01.jpg')}}" class="main-image"><img src="{{asset('images/main01.jpg')}}"></a>
                               <p>
                                 {{$post->content}}
                               </p>
@@ -63,7 +63,7 @@
                                        </div>
                                     </div>
                                  </li>
-
+                                 
                                  <li class="comment">
                                     <div class="avatar-image-container"><img src="{{asset('images/avatar01.png')}}"></div>
                                     <div  class="comment-block">

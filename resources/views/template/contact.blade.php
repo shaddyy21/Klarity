@@ -13,7 +13,7 @@
 						        <textarea id="message" class="pure-input-1" type="message" placeholder=""></textarea>
 
 
-						        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+						        <button type="submit" class="pure-button pure-button-primary">Send</button>
 						    </fieldset>
 						</form>
                      </div>

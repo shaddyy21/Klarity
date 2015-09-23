@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    public function users(){
+    public function user(){
         return $this->belongsTo('App\Models\User');
     }
     
@@ -14,7 +14,9 @@ class Post extends Model
         return $this->hasMany('App\Models\Comment');
     }
     
-    public function lblposts(){
-        return $this->belongsTo('App\Models\Label_Post');
+    public function lables(){
+        return $this->hasMany('App\Models\Label');
     }
+    
+    protected $dates = ['created_at'];
 }
