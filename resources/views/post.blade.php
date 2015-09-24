@@ -44,42 +44,12 @@
                         </div>
 
                         <div class="comments" id="comments">
-                           <h4>2 comments:</h4>
+                           <h4>{{$post->comments->count()}} comments:</h4>
                            <div class="comments-content">
                               <ol>
-                                 <li class="comment">
-                                    <div class="avatar-image-container"><img src="{{asset('images/avatar01.png')}}"></div>
-                                    <div  class="comment-block">
-                                       <div class="comment-header">
-                                          <cite class="user"><a  href="">kin cheong tong</a></cite>
-                                          <span class="icon user"></span>
-                                          <span class="datetime secondary-text">
-                                          <a rel="nofollow" href="">March 23, 2015 at 11:50 PM</a></span>
-                                       </div>
-                                       <p class="comment-content">hi hi</p>
-                                       <div class="comment-actions">
-                                          <a class="pure-button pure-button-primary">Reply</a>
-                                          <a class="pure-button pure-button-primary" href="">Delete</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 
-                                 <li class="comment">
-                                    <div class="avatar-image-container"><img src="{{asset('images/avatar01.png')}}"></div>
-                                    <div  class="comment-block">
-                                       <div class="comment-header">
-                                          <cite class="user"><a  href="">kin cheong tong</a></cite>
-                                          <span class="icon user"></span>
-                                          <span class="datetime secondary-text">
-                                          <a rel="nofollow" href="">March 23, 2015 at 11:50 PM</a></span>
-                                       </div>
-                                       <p class="comment-content">hi hi</p>
-                                       <div class="comment-actions">
-                                          <a class="pure-button pure-button-primary">Reply</a>
-                                          <a class="pure-button pure-button-primary" href="">Delete</a>
-                                       </div>
-                                    </div>
-                                 </li>
+                                 @foreach($post->comments as $comment)
+                                   @include("template.comments",["comment"=>$comment])
+                                @endforeach
                               </ol>
                               <h4><a href="">Add comment</a></h4>
                               <div class="comment-replybox-thread">

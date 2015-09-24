@@ -27,7 +27,7 @@
                              <div class="item-content">
                                 <div class="item-thumbnail">
                                    <a href="" target="_blank">
-                                   <img alt="" border="0" src="images/trending03.jpeg" width="120" height="120">
+                                   <img alt="" border="0" src="{{asset('images/trending03.jpeg')}}" width="120" height="120">
                                    </a>
                                 </div>
                                 <div class="item-title"><a href="">Make up before party</a></div>
