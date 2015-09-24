@@ -2,7 +2,7 @@
                                     <div class="avatar-image-container"><img src="{{asset('images/avatar01.png')}}"></div>
                                     <div  class="comment-block">
                                        <div class="comment-header">
-                                          <cite class="user"><a  href=""></a></cite>
+                                          <cite class="user"><a  href="">{{$comment->user->firstname}} {{$comment->user->lastname}}</a></cite>
                                           <span class="icon user"></span>
                                           <span class="datetime secondary-text">
                                           <a rel="nofollow" href="">{{$comment->created_at->format('l jS \\of F Y h:i A')}}</a></span>
