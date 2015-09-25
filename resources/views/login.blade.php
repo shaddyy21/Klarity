@@ -6,17 +6,21 @@
                         <h2>Login</h2>
                      </div>
 
-                     <form class="pure-form pure-form-stacked">
+                     {!! Form::open(['url' => 'login']) !!}
                          <fieldset>
-                             <label for="email">Email</label>
-                             <input id="email" type="email" placeholder="Email">
+                            {!! Form::label('emaile', 'E-mail:', array('class'=>'labels')) !!}
+                            {!! Form::text('email', null, array('class'=>'inputs')) !!}
+                            {!! $errors->first('email','<p class="error">:message</p>')!!}
 
-                             <label for="password">Password</label>
-                             <input id="password" type="password" placeholder="Password">
+                            {!! Form::label('password', 'Password:', array('class'=>'labels')) !!}
+                            {!! Form::password('password', array('class'=>'inputs')) !!}
+                            {!! $errors->first('password','<p class="error">:message</p>')!!}
 
-                             <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                            <p class="error">{{Session::get('message')}}</p>
+
+                             <button type="submit" class="sub" class="pure-button pure-button-primary">Sign in</button>
                          </fieldset>
-                     </form>
+                     {!! Form::close() !!}
 
                   </div>
 @stop

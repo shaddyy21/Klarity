@@ -91,6 +91,33 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        /*============================================================================*/
+        /*                      User custom error messages                            */
+        /*============================================================================*/
+            'firstname' => [
+                'required' => '*Please fill in first name field.',
+            ], 
+        
+            'lastname' => [
+                'required' => '*Please fill in last name field.',
+            ],
+        
+            'email' => [
+                'required' => '*Please fill in e-mail field.', 'email' => '*Please enter a valid e-mail.',
+            ],
+        
+            'username' => [
+                'required' => '*Please fill in user name field.', 'unique' => '*User name already taken',
+            ],
+        
+            'password' => [
+                'required' => '*Please fill in password field.', 'confirmed' => '*Passwords doesn&apos;t match password.',
+            ], 
+        
+            'password_confirmation' => [
+                'required' => '*Please fill in password confirm field.',
+            ],
+        /*============================================================================*/
     ],
 
     /*

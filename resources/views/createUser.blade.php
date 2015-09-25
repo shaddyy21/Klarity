@@ -1,7 +1,9 @@
 @extends('template.template')
 
 @section('content')
-			<h2 class="cHead">Create new Account</h2>
+			<div class="main-heading">
+                <h2>Create new Account</h2>
+             </div>
 			{!! Form::open(array('url' => 'users')) !!}
 				<fielset>
 					{!! Form::label('firstname', 'First Name:', array('class' => 'labels')) !!}
@@ -28,8 +30,7 @@
 					{!! Form::password('password_confirmation', array('class' => 'inputs')) !!}
                     {!! $errors->first('password_confirmation','<p class="error">:message</p>')!!}
 					
-					<input type="submit" id="sub" value="Create account">
+					 <button type="submit" class="sub" class="pure-button pure-button-primary">Create Account</button>
 				</fielset>
-				
             {!! Form::close() !!}
 @stop
