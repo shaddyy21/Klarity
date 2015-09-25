@@ -1039,3 +1039,23 @@ padding-right: 20px;
 .form-page label, .form-page button, .form-page [type=submit]{
 	margin-top: 1em;
 }
+
+.labels{
+    margin: 5em 10em 6em 26.5em;
+}
+
+.inputs{
+    margin: 1em 10em 2em 15em;
+    width: 32em;
+}
+
+.cHead{
+    padding-top: 0.5em;
+    font-size: 3em;
+/*    line-height: 2.5em;*/
+    margin: 0 0 0.5em 6em;
+}
+
+#sub{
+    margin-left: 26.5em;
+}
