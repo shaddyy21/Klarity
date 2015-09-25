@@ -22,7 +22,7 @@
 			<h4 class="proInput">{{$user->username}}</h4>
 			
 			
-                <a href="{{url('users/'.Auth::user()->id.'/edit')}}" class="sub">Edit Profile</a>
+            <a href="{{url('users/'.Auth::user()->id.'/edit')}}" class="sub">Edit Profile</a>
 			
 			
 @stop

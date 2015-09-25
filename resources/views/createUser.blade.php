@@ -30,7 +30,7 @@
 					{!! Form::password('password_confirmation', array('class' => 'inputs')) !!}
                     {!! $errors->first('password_confirmation','<p class="error">:message</p>')!!}
 					
-					 <button type="submit" class="sub" class="pure-button pure-button-primary">Create Account</button>
+                    <button type="submit" class="sub" class="pure-button pure-button-primary">Create Account</button>
 				</fielset>
             {!! Form::close() !!}
 @stop

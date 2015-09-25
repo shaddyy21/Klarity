@@ -1075,7 +1075,7 @@ padding-right: 20px;
 }
 .proLabel {
     margin-left: 5em;
-    font-size: 2em;
+    font-size: 1.9em;
 /*    border: 1px red solid;*/
     width: 5.6em;
     padding-bottom: 1em;
@@ -1085,7 +1085,24 @@ padding-right: 20px;
     margin-left: 12.5em;
     margin-top: -2.5em;
     padding-bottom: 1em;
-    font-size: 2em;
+    font-size: 1.9em;
 /*    border: 1px red solid;*/
 /*    width: 5.6em;*/
+}
+
+.editLabel{
+    margin-left: 4.5em;
+    font-size: 1.9em;
+    border: 1px red solid;
+    width: 5.6em;
+    padding-bottom: 0.1em;
+}
+
+.editInput{
+    margin-left: 12.5em;
+    margin-top: -20em;
+    padding-bottom: 0.1em;
+    font-size: 1.9em;
+    border: 1px red solid;
+
 }
