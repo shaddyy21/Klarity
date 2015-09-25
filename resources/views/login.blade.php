@@ -8,7 +8,7 @@
 
                      {!! Form::open(['url' => 'login']) !!}
                          <fieldset>
-                            {!! Form::label('emaile', 'E-mail:', array('class'=>'labels')) !!}
+                            {!! Form::label('email', 'E-mail:', array('class'=>'labels')) !!}
                             {!! Form::text('email', null, array('class'=>'inputs')) !!}
                             {!! $errors->first('email','<p class="error">:message</p>')!!}
 

@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/forms-nr-min.css">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
      <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+     <link rel="stylesheet" href="{{asset('css/animate.css')}}">
    </head>
    <body>
       <div class="container">
@@ -106,5 +107,10 @@
 
 
       </div>
+      <!--==========jQuery==============================-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="{{asset('js/jQScript.js')}}"></script>
+    <!--==================================================  -->
    </body>
 </html>
