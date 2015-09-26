@@ -23,7 +23,7 @@
 					{!! $errors->first('email','<p class="error">:message</p>')!!}
 					
 					
-					<button type="submit" class="sub" class="pure-button pure-button-primary">Create Account</button>
+					<input type="submit" class="sub" class="pure-button pure-button-primary" value="Update">
 				</fielset>
 				
             {!! Form::close() !!}

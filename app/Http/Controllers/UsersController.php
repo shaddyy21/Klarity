@@ -89,7 +89,7 @@ class UsersController extends Controller
             return view('editUser',compact('user'));
         }
     /*===========================================================================*/
-
+    
     
     /*===========================================================================*/
     /*                        Adds edited profile by ID to DB                    */

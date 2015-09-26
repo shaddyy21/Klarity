@@ -1091,18 +1091,22 @@ padding-right: 20px;
 }
 
 .editLabel{
-    margin-left: 4.5em;
+    display: inline;
+    margin-left: 5.1em;
+    margin-top: 2em;
     font-size: 1.9em;
-    border: 1px red solid;
     width: 5.6em;
-    padding-bottom: 0.1em;
+    padding-bottom: 1em;
+/*    border: 1px red solid;*/
 }
 
 .editInput{
+    display: block;
     margin-left: 12.5em;
-    margin-top: -20em;
-    padding-bottom: 0.1em;
+    margin-top: -1em;
+    margin-bottom: 1em;
     font-size: 1.9em;
-    border: 1px red solid;
+/*    padding-bottom: 1em;*/
+/*    border: 1px red solid;*/
 
 }

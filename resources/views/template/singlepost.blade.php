@@ -21,7 +21,7 @@
                                     </div>
                                     <div class="item-thumb entry-image" style="position:relative;">
                                        <a href="">
-                                          <img src="{{asset('images/main01.jpg')}}" style="max-width:100%;" alt="Commodo omittam copiosae ">
+                                          <img src="{{asset('images/'.$post->photo)}}" style="max-width:100%;" alt="{{$post->photo}}">
                                        </a>
                                     </div>
                                     <div class="entry-feat-overlay">

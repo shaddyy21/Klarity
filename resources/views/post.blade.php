@@ -15,13 +15,13 @@
                               </div>
                            </div>
                            <div class="post-body">        
-                              <a href="{{url('images/main01.jpg')}}" class="main-image"><img src="{{asset('images/main01.jpg')}}"></a>
+                              <a href="{{url('images/'.$post->photo)}}" class="main-image"><img src="{{asset('images/'.$post->photo)}}"></a>
                               <p>
                                 {{$post->content}}
                               </p>
                                  
                            </div>
-                            <div id="related-posts">
+                            <div id="related-posts"
                               <h5>Related Posts</h5>
                               <ul>
                                  <li>

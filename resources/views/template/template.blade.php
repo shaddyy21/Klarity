@@ -25,7 +25,7 @@
                   <div id="header-inner">
                      <div class="titlewrapper">
                         <h1 class="title">
-                           <a href="">Klarity</a>
+                           <a href="{{url('/')}}">Klarity</a>
                         </h1>
                      </div>
                      <div class="descriptionwrapper">
@@ -42,11 +42,16 @@
          <div class="nav-menu white">
             <div class="ct-wrapper">
                <ul>
-                  <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                  <li><a href="{{url('/')}}"><i class="fa fa-home"></i> Home</a></li>
                   <li><a href=""><i class="fa fa-pencil"></i> Blog</a></li>
                   <li><a href=""><i class="fa fa-briefcase"></i></span> Portfolio</a></li>
-                  <li><a href=""><i class="fa fa-bolt"></i></span> Pages</a></li>
-                  <li><a href=""><i class="fa fa-user"></i></span> About</a></li>
+                  @if(Auth::check())
+                      <li class="clear"><a href="{{url('users/'.Auth::user()->id)}}">Account <i class="icon-user"></i></a></li>
+                      <li><a href="{{url('logout')}}">Logout <i class="icon-lock"></i></a></li>
+                  @else
+                      <li><a href="{{url('login')}}"><i class="fa fa-sign-in"></i></span> Log-in</a></li>
+                      <li><a href="{{url('users/create')}}"><i class="fa fa-user"></i></span> Register</a></li>
+                  @endif
                </ul>
             </div>
             <div class="clr"></div>

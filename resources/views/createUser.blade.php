@@ -2,7 +2,7 @@
 
 @section('content')
 			<div class="main-heading">
-                <h2>Create new Account</h2>
+                <h2>Register</h2>
              </div>
 			{!! Form::open(array('url' => 'users')) !!}
 				<fielset>
@@ -30,7 +30,7 @@
 					{!! Form::password('password_confirmation', array('class' => 'inputs')) !!}
                     {!! $errors->first('password_confirmation','<p class="error">:message</p>')!!}
 					
-                    <button type="submit" class="sub" class="pure-button pure-button-primary">Create Account</button>
+                    <button type="submit" class="sub" class="pure-button pure-button-primary">Register</button>
 				</fielset>
             {!! Form::close() !!}
 @stop
