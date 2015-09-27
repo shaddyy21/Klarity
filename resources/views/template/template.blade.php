@@ -25,7 +25,7 @@
                   <div id="header-inner">
                      <div class="titlewrapper">
                         <h1 class="title">
-                           <a href="{{url('/')}}">Klarity</a>
+                           <a href="{{url('posts')}}">Klarity</a>
                         </h1>
                      </div>
                      <div class="descriptionwrapper">
@@ -42,7 +42,7 @@
          <div class="nav-menu white">
             <div class="ct-wrapper">
                <ul>
-                  <li><a href="{{url('/')}}"><i class="fa fa-home"></i> Home</a></li>
+                  <li><a href="{{url('posts')}}"><i class="fa fa-home"></i> Home</a></li>
                   <li><a href=""><i class="fa fa-pencil"></i> Blog</a></li>
                   <li><a href=""><i class="fa fa-briefcase"></i></span> Portfolio</a></li>
                   @if(Auth::check())

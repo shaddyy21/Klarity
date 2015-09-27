@@ -1106,7 +1106,10 @@ padding-right: 20px;
     margin-top: -1em;
     margin-bottom: 1em;
     font-size: 1.9em;
-/*    padding-bottom: 1em;*/
-/*    border: 1px red solid;*/
+}
 
+.inputsText{
+   margin: 1em 10em 2em 15em;
+   width: 32em;
+   min-height: 9.69em;
 }

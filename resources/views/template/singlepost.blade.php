@@ -20,7 +20,7 @@
                                        <span><a href="label/Minimal" rel="tag"></a></span>
                                     </div>
                                     <div class="item-thumb entry-image" style="position:relative;">
-                                       <a href="">
+                                       <a href="{{asset('images/'.$post->photo)}}">
                                           <img src="{{asset('images/'.$post->photo)}}" style="max-width:100%;" alt="{{$post->photo}}">
                                        </a>
                                     </div>
@@ -43,7 +43,7 @@
                                  </div>
                                  <div class="item-content">
                                     <p style="margin:0;">
-                                        {{$post->content}}
+                                        {{$post->contents}}
                                     </p>
                                  </div>
                               </div>

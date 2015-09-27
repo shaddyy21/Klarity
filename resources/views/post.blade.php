@@ -17,7 +17,7 @@
                            <div class="post-body">        
                               <a href="{{url('images/'.$post->photo)}}" class="main-image"><img src="{{asset('images/'.$post->photo)}}"></a>
                               <p>
-                                {{$post->content}}
+                                {{$post->contents}}
                               </p>
                                  
                            </div>

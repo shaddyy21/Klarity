@@ -24,9 +24,9 @@ class LoginController extends Controller
            $credential = $request->only('email', 'password');
            
            if($auth->attempt($credential)){
-               return redirect()->intended('allpost');
+               return redirect()->intended('/');
            }else{
-               return redirect('login')->with('message','*Incorrect username or password. Please try again!');
+               return redirect('login')->with('message','*Incorrect e-mail or password. Please try again!');
            }
        }
     /*===========================================================================*/
