@@ -8,6 +8,9 @@ use App\Http\Controllers\Controller;
 
 class PostController extends Controller
 {
+    /*===============================================================*/
+    /*                     Shows all posts                           */
+    /*===============================================================*/
     /**
      * Display a listing of the resource.
      *
@@ -18,7 +21,12 @@ class PostController extends Controller
         $post = \App\Models\Post::all();
         return view('allposts',compact('post'));
     }
+    /*================================================================*/
 
+    
+    /*================================================================*/
+    /*                    Shows create post form                      */
+    /*================================================================*/
     /**
      * Show the form for creating a new resource.
      *
@@ -28,7 +36,12 @@ class PostController extends Controller
     {
         return view('createPost');
     }
-
+    /*=================================================================*/
+    
+    
+    /*=================================================================*/
+    /*                  Adds post to the DB                            */
+    /*=================================================================*/
     /**
      * Store a newly created resource in storage.
      *
@@ -37,9 +50,19 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = \App\Models\Post::create($request->all());
+        $filename = \Carbon\Carbon::now()->timestamp."_post.jpg";
+        $request->file('photo')->move('images',$filename);
+        $post->photo = $filename;
+        $post->save();
+        return redirect('posts/'.$post->id);
     }
+    /*=================================================================*/
 
+    
+    /*=================================================================*/
+    /*                    shows post by id                             */
+    /*=================================================================*/
     /**
      * Display the specified resource.
      *
@@ -51,7 +74,12 @@ class PostController extends Controller
         $post = \App\Models\Post::find($id);
         return view('post',compact('post'));
     }
-
+    /*=================================================================*/
+    
+    
+    /*=================================================================*/
+    /*                   Edits post by id                              */
+    /*=================================================================*/
     /**
      * Show the form for editing the specified resource.
      *
@@ -62,6 +90,7 @@ class PostController extends Controller
     {
         //
     }
+    /*=================================================================*/
 
     /**
      * Update the specified resource in storage.

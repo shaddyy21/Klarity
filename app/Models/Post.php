@@ -18,5 +18,5 @@ class Post extends Model
         return $this->belongsToMany('App\Models\Label');
     }
     
-    protected $dates = ['created_at'];
+   protected $fillable = ['title', 'contents', 'photo', 'user_id',];
 }

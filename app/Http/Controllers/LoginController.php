@@ -24,7 +24,7 @@ class LoginController extends Controller
            $credential = $request->only('email', 'password');
            
            if($auth->attempt($credential)){
-               return redirect()->intended('/');
+               return redirect()->intended('posts');
            }else{
                return redirect('login')->with('message','*Incorrect e-mail or password. Please try again!');
            }
@@ -37,7 +37,7 @@ class LoginController extends Controller
     /*===========================================================================*/
         public function logout(\Illuminate\Contracts\Auth\Guard $auth){
             $auth->logout();
-        return redirect('/');
+        return redirect('posts');
     }
     /*===========================================================================*/
 }

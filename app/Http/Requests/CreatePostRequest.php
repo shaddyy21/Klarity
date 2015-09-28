@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class UpdateUserRequest extends Request
+class CreatePostRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,9 @@ class UpdateUserRequest extends Request
     public function rules()
     {
         return [
-            "firstname"=>"required",
-           "lastname"=>"required",
-           "email"=>"required|unique:users,email,".$this->route('users'),
-           
+            "title"=>"required",
+            "contents"=>"required",
+            "photo"=>"required"
         ];
     }
 }
