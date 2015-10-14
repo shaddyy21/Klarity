@@ -7,7 +7,7 @@
       <title>Klarity</title>
       <meta charset="UTF-8">
       <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-      <link href="css/css" rel="stylesheet" type="text/css">
+      <!-- <link href="css/css" rel="stylesheet" type="text/css"> -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/forms-nr-min.css">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/buttons-min.css">
@@ -115,7 +115,9 @@
       <!--==========jQuery==============================-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="{{asset('js/jQScript.js')}}"></script>
+    <script src="{{asset('js/jQuery.js')}}"></script>
+    <script src="{{asset('js/Editable.js')}}"></script>
+    
     <!--==================================================  -->
    </body>
 </html>

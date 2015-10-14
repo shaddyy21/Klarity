@@ -3,7 +3,7 @@
                   <div class="content section single-post-page" id="content">   
                      <div class="post-outer">
                         <div class="post hentry uncustomized-post-template">
-                           <h1 class="the-main-title single-post-title">{{$post->title}}</h1>
+                           <h1 class="the-main-title single-post-title" data-field="title">{{$post->title}}</h1>
                            <div class="post-meta">
                               <div class="small">Posted by <a href="" rel="author" title="Posts bySora Templates">{{$post->user->firstname}} {{$post->user->lastname}}</a> in 
                                  <span class="post-categories">
@@ -16,10 +16,9 @@
                            </div>
                            <div class="post-body">        
                               <a href="{{url('images/'.$post->photo)}}" class="main-image"><img src="{{asset('images/'.$post->photo)}}"></a>
-                              <p>
+                              <p data-field="contents">
                                 {{$post->contents}}
-                              </p>
-                                 
+                              </p> 
                            </div>
                             <div id="related-posts"
                               <h5>Related Posts</h5>
@@ -65,6 +64,7 @@
                            </div>
                         </div>
                         <div class="clr"></div>
+                        <div id="token" hidden>{{ csrf_token() }}</div>
                      </div>
                      @include('template.pager')
                   </div>
